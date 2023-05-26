@@ -5,10 +5,32 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>Proliferation.Flows.Server.Program</StartupObject>
+    <AssemblyName>FlowsServer</AssemblyName>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <Title>Proliferation Flows Server</Title>
+    <Version>1.0.2</Version>
+    <Authors>Datendrache</Authors>
+    <Description>Flows Server Console Application Version</Description>
+    <Copyright>Copyright (C) 2003-2023 by Eric Knight</Copyright>
+    <PackageProjectUrl>https://github.com/datendrache/FlowsServer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/datendrache/FlowsServer.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Proliferation; Flows; Server; Complex Event Processor</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FlowsLibrary" Version="1.0.0" />
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Proliferation.Flows.Microkernel" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
